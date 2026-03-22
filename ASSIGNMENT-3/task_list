@@ -1,0 +1,30 @@
+Submission Checklist Tasks
+Q1 — POST /products
+Task: POST /products added Laptop Stand with ID 5 and status 201
+
+Task: POST /products added Sticky Notes with ID 6 and status 201
+
+Task: POST /products with "Wireless Mouse" returns 400 duplicate error
+
+Q2 — PUT /products (Update)
+Task: PUT /products/3?in_stock=true restocks USB Hub correctly
+
+Task: PUT /products/3?in_stock=true&price=649 updates both fields in one call
+
+Task: PUT /products/99?price=100 returns 404 Not Found
+
+Q3 — DELETE /products
+Task: DELETE /products/4 removes Pen Set and confirms name in message
+
+Task: DELETE /products/4 again returns 404 Not Found
+
+Q4 — Full Lifecycle
+Task: Full 6-step CRUD lifecycle for Smart Watch completed correctly
+
+Q5 — GET /products/audit
+Task: GET /products/audit returns correct counts, stock value, and most expensive product
+
+Task: /products/audit is placed ABOVE /products/{product_id} in the file
+
+Bonus — Bulk Discount
+Task: PUT /products/discount?category=Electronics&discount_percent=10 reduces all Electronics prices
